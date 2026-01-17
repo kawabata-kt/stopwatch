@@ -1,4 +1,6 @@
+import { stopwatch } from './stopwatch'
 import './style.css'
-import { test } from './test.ts'
-test();
+// import { test } from './test.ts'
+// test();
 
+stopwatch();
