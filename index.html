@@ -7,7 +7,7 @@
     <title>vite-project</title>
   </head>
   <body>
-    <div class="stopwatch">
+    <div id="stopwatch" class="panel">
       <div id="display">00:00:00.00</div>
 
       <div class="buttons">
@@ -17,6 +17,23 @@
 
       <ul id="laps"></ul>
     </div>
+
+    <div class="panel" id="timer">
+      <p>ここにタイマーを作成予定</p>
+    </div>
+
+    <div class="panel" id="alarm">
+      <p>ここにアラームを作成予定</p>
+    </div>
+
+    <div class="change-mode">
+      <div class="change-mode">
+        <button data-target="stopwatch" class="change-btn">ストップウォッチ</button>
+        <button data-target="timer" class="change-btn">タイマー</button>
+        <button data-target="alarm" class="change-btn">アラーム</button>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

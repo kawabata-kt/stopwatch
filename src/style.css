@@ -1,4 +1,4 @@
-.stopwatch {
+#stopwatch {
   width: 200px;
   margin: 20px auto;
   text-align: center;
@@ -22,4 +22,13 @@
   padding: 0;
   list-style: none;
   text-align: left;
+}
+
+.panel {
+  display: none;
+}
+
+.change-mode {
+  margin: 20px auto;
+  text-align: center;
 }
