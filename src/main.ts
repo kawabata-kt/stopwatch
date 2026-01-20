@@ -1,18 +1,15 @@
 import { stopwatch } from './stopwatch'
 import './style.css'
+import { timer } from './timer';
 // import { test } from './test.ts'
 // test();
 
 stopwatch();
+timer();
 
 // ストップウォッチ、タイマー、アラームの切り替え
-const $panels = document.querySelectorAll<HTMLDivElement>('.panel');
+const $panels = document.querySelectorAll<HTMLDivElement>('#stopwatch, #timer, #alarm');
 const $changeModeBtn = document.querySelectorAll<HTMLButtonElement>('.change-btn');
-const el = document.getElementById("stopwatch");
-if (el !== null && el !== undefined) {
-  el.classList.remove("panel");
-}
-
 
 $changeModeBtn.forEach(($btn) => {
   $btn.addEventListener('click', () => {
@@ -28,4 +25,4 @@ $changeModeBtn.forEach(($btn) => {
       $target.classList.remove("panel");
     }
   });
-}); 
+});

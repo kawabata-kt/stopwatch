@@ -32,3 +32,40 @@
   margin: 20px auto;
   text-align: center;
 }
+
+/* タイマーパネル全体 */
+#timer {
+  width: 220px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* タイマー表示 */
+#display-timer {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+/* セレクトボックス */
+#timer select {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  font-size: 16px;
+  margin: 5px 3px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+/* ボタン */
+#timer button {
+  height: 40px;
+  margin: 10px auto;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/*

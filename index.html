@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <title>vite-project</title>
   </head>
   <body>
-    <div id="stopwatch" class="panel">
+    <div id="stopwatch">
       <div id="display">00:00:00.00</div>
 
       <div class="buttons">
@@ -19,7 +19,14 @@
     </div>
 
     <div class="panel" id="timer">
-      <p>ここにタイマーを作成予定</p>
+      <div id="display-timer">00:00:00</div>
+
+      <select id="hours"></select>時間
+      <select id="minutes"></select>分
+      <select id="seconds"></select>秒
+
+      <button id="startStopBtn">スタート</button>
+      <button id="cancelBtn">キャンセル</button>
     </div>
 
     <div class="panel" id="alarm">
@@ -28,7 +35,9 @@
 
     <div class="change-mode">
       <div class="change-mode">
-        <button data-target="stopwatch" class="change-btn">ストップウォッチ</button>
+        <button data-target="stopwatch" class="change-btn">
+          ストップウォッチ
+        </button>
         <button data-target="timer" class="change-btn">タイマー</button>
         <button data-target="alarm" class="change-btn">アラーム</button>
       </div>
